@@ -48,3 +48,56 @@ def reverse_list(array):
     return my_list
 print(reverse_list([1, 2, 3, 4, 5]))
 print(reverse_list(["A", "B", "C"]))
+
+def capitalize_list_items(list_param):
+    my_list = []
+    for i in range(len(list_param)):
+        word = list_param[i].capitalize()
+        my_list.append(word)
+    return my_list
+print(capitalize_list_items(["david", "kingsley", "solomon"]))
+
+def add_item(list_param, item):
+    list_param.append(item)
+    return list_param
+food_stuff = ['Potato', 'Tomato', 'Mango', 'Milk'];
+print(add_item(food_stuff, 'Meat'))
+numbers = [2, 3, 7, 9];
+print(add_item(numbers, 5))
+
+def remove_item(list_param, item):
+    list_param.remove(item)
+    return list_param
+food_stuff = ['Potato', 'Tomato', 'Mango', 'Milk']
+print(remove_item(food_stuff, 'Mango'))
+numbers = [2, 3, 7, 9]
+print(remove_item(numbers, 3))
+
+def sum_of_numbers(number):
+    add_num = 0
+    for i in range(1, number + 1):
+        add_num = add_num + i
+    return add_num
+print(sum_of_numbers(5))
+print(sum_of_numbers(10))
+print(sum_of_numbers(100))
+
+def sum_of_odds(number):
+    add_odd_num = 0
+    for i in range(1, number + 1, 3):
+        add_odd_num = add_odd_num + i
+    return add_odd_num
+print(sum_of_odds(5))
+print(sum_of_odds(10)) 
+print(sum_of_odds(100))
+
+def sum_of_even(number):
+    add_even_num = 0
+    for i in range(1, number + 1, 2):
+        add_even_num = add_even_num + i
+    return add_even_num
+print(sum_of_even(5))
+print(sum_of_even(10))
+print(sum_of_even(100))
+
+
